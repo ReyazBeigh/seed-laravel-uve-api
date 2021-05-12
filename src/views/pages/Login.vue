@@ -6,12 +6,14 @@
     <v-card-text>
       <v-form v-model="valid" lazy-validation ref="form">
         <v-text-field
+
           label="Email"
           prepend-icon="mdi-account-circle"
           v-model="email"
           :rules="emailRules"
         />
         <v-text-field
+
           :type="showPassword ? 'text' : 'password'"
           label="Password"
           prepend-icon="mdi-lock"
